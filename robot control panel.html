@@ -1,0 +1,124 @@
+<html>
+<head>
+<title> لوحة تحكم الروبوت </title>
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<br>
+<ul>
+
+<div class ="slide1">
+<span id ="demo1"></span>
+0<input type="range" min=1 max=180 value=50 class = "slider"  id="myrange1"> <b>    محرك 1   </b>180
+</div>
+
+<br>
+
+<div class ="slide2">
+<span id ="demo2"></span>
+0<input type="range" min=1 max=180 value=50 class = "slider"  id="myrange2"> <b> محرك 2 </b>180
+
+</div>
+
+<br>
+
+<div class ="slide3">
+<span id ="demo3"></span>
+0<input type="range" min=1 max=180 value=50 class = "slider"  id="myrange3"> <b> محرك 3 </b>180
+
+</div>
+
+<br>
+
+<div class ="slide4">
+<span id ="demo4"></span>
+0<input type="range" min=1 max=180 value=50 class = "slider"  id="myrange4"> <b>    محرك 4   </b>180
+</div>
+
+<br>
+
+<div class ="slide5">
+<span id ="demo5"></span>
+0<input type="range" min=1 max=180 value=50 class = "slider"  id="myrange5"> <b>    محرك 5   </b>180
+</div>
+
+<br>
+
+<button class="button button1"><b>حفظ</b> </button>
+<button class="button button2"><b>تشغيل</b></button>
+
+<style>
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} 
+.button2 {background-color: #008CBA;} 
+
+</style>
+
+<table style="width:60%">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<th> <th> <th> <button class="button button3"><b>Forward</b> </button>
+<br>
+<button class="button button4"><b>Left</b></button>
+<button class="button button5"><b>Stop</b></button>
+<button class="button button6"><b>Right</b></button>
+<br>
+<button class="button button7"><b>Backward</b></button>
+
+<style>
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button3 {background-color: #33C7FF;} 
+.button4 {background-color: #33C7FF;} 
+.button5 {background-color: #880808;} 
+.button6 {background-color: #33C7FF;} 
+.button7 {background-color: #33C7FF;}  
+
+</style>
+
+
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "8318f7da-4f19-4655-aebb-8d93a7304684", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "287eb84e-9681-4e4d-bb6f-c24821f690e0", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
